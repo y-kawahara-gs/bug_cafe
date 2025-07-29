@@ -33,7 +33,7 @@ puts 'フードメニューはいかがですか?'
 order2 = take_order(FOODS)
 
 
-#DRINKSのtake_orderを管理しているorder1とFOODSのtake_orderを管理しているorder2が逆になっているため修正i
+#DRINKSのtake_orderを管理しているorder1とFOODSのtake_orderを管理しているorder2が逆になっているため修正
 #また、値段が文字列になっているため数値に変換
 total =DRINKS[order1][:price].to_i + FOODS[order2][:price].to_i
 puts "お会計は#{total}円になります。ありがとうございました！"
