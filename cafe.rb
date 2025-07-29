@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-require 'debug' # 読み込み
 
 DRINKS = [
   { name: 'コーヒー', price: '300' },
@@ -34,9 +33,7 @@ order1 = take_order(DRINKS)
 puts 'フードメニューはいかがですか?'
 order2 = take_order(FOODS)
 
-#binding.break
 
-#total = FOODS[order1][:price]+ DRINKS[order2][:price]
 #DRINKSのtake_orderを管理しているorder1とFOODSのtake_orderを管理しているorder2が逆になっているため修正i
 #また、値段が文字列になっているため数値に変換
 total =DRINKS[order1][:price].to_i + FOODS[order2][:price].to_i
